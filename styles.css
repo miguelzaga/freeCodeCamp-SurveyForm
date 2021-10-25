@@ -1,0 +1,48 @@
+/*
+Color Palette
+---
+light blue: #92a8d1
+blue: #034f84
+light pink: #f7cac9
+pink: #f7786b
+
+Font
+---
+font-family: 'Playfair Display', serif;
+*/
+
+* {
+    font-family: 'Playfair Display', serif;
+}
+
+body {
+    background-color: #034f84;
+    max-width: 800px;
+    margin: auto;
+}
+
+header {
+    background-color: #92a8d1;
+    border-radius: 5px;
+    text-align: center;
+}
+
+header p {
+    font-style: italic;
+}
+
+#survey-form {
+    background-color: #f7cac9;
+    border: thick solid #f7786b;
+    border-radius: 5px;
+}
+
+.form-field {
+    padding: 10px;
+}
+
+#submit {
+    display: block;
+    width: 100px;
+    margin: auto;
+}

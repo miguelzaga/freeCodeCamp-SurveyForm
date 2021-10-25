@@ -5,33 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Survey</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sports Survey</title>
 </head>
 
 <body>
     <header>
-        <h1 id="title">Favorite Sport Form</h1>
+        <h1 id="title">Sports Survey</h1>
         <p id="description">
-            This is a form to know what sports people prefer
+            How much do you like sports?
         </p>
     </header>
     <form id="survey-form" action="">
-        <div>
+        <div class="form-field">
             <label id="name-label" for="name">Name
                 <input placeholder="Enter your name" type="text" id="name">
             </label>
         </div>
-        <div>
+        <div class="form-field">
             <label id="email-label" for="email">Email
                 <input placeholder="Enter your email" type="email" id="email">
             </label>
         </div>
-        <div>
+        <div class="form-field">
             <label id="number-label" for="number">Age
                 <input placeholder="0" type="number" id="number" min="0" max="200">
             </label>
         </div>
-        <div>
+        <div class="form-field">
             <label for="dropdown">Favorite sport
                 <select id="dropdown">
                     <option value="">Tennis</option>
@@ -42,31 +44,37 @@
                 </select>
             </label>
         </div>
-        <div>
+        <div class="form-field">
             <p>What do you prefer?</p>
             <label>Play it
-                <input type="radio" name="watch-or-play">
+                <input value="play" type="radio" name="watch-or-play">
             </label>
             <label>Watch it
-                <input type="radio" name="watch-or-play">
+                <input value="watch" type="radio" name="watch-or-play">
             </label>
         </div>
-        <div>
+        <div class="form-field">
             <p>What activities do you do at least once a month?</p>
-            <input type="checkbox" name="activities">
+            <input value="gym" type="checkbox" name="activities">
             Go to the gym
             </label>
-            <input type="checkbox" name="activities">
+            <input value="sport" type="checkbox" name="activities">
             Play a sport
             </label>
-            <input type="checkbox" name="activities">
+            <input value="stretch" type="checkbox" name="activities">
             Stretch
             </label>
-            <input type="checkbox" name="activities">
+            <input value="walk" type="checkbox" name="activities">
             Walk for at least 30 min
             </label>
         </div>
-        <input type="submit" name="" id="">
+        <div class="form-field">
+            <p>What other physical activities do you do?</p>
+            <textarea name="other" id="other-activities" maxlength="200"></textarea>
+        </div>
+        <button type="submit" id="submit">
+            Submit
+        </button>
     </form>
 </body>
 
