@@ -17,12 +17,54 @@
     </header>
     <form id="survey-form" action="">
         <div>
-            <label for="name">Name</label>
-            <input type="text" id="name">
+            <label id="name-label" for="name">Name
+                <input placeholder="Enter your name" type="text" id="name">
+            </label>
         </div>
         <div>
-            <label for="email">Email</label>
-            <input type="email" id="email">
+            <label id="email-label" for="email">Email
+                <input placeholder="Enter your email" type="email" id="email">
+            </label>
+        </div>
+        <div>
+            <label id="number-label" for="number">Age
+                <input placeholder="0" type="number" id="number" min="0" max="200">
+            </label>
+        </div>
+        <div>
+            <label for="dropdown">Favorite sport
+                <select id="dropdown">
+                    <option value="">Tennis</option>
+                    <option value="">Volleyball</option>
+                    <option value="">Soccer</option>
+                    <option value="">Football</option>
+                    <option value="">Basketball</option>
+                </select>
+            </label>
+        </div>
+        <div>
+            <p>What do you prefer?</p>
+            <label>Play it
+                <input type="radio" name="watch-or-play">
+            </label>
+            <label>Watch it
+                <input type="radio" name="watch-or-play">
+            </label>
+        </div>
+        <div>
+            <p>What activities do you do at least once a month?</p>
+            <input type="checkbox" name="activities">
+            Go to the gym
+            </label>
+            <input type="checkbox" name="activities">
+            Play a sport
+            </label>
+            <input type="checkbox" name="activities">
+            Stretch
+            </label>
+            <input type="checkbox" name="activities">
+            Walk for at least 30 min
+            </label>
         </div>
         <input type="submit" name="" id="">
     </form>
