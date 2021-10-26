@@ -1,48 +1,70 @@
-/*
-Color Palette
----
-light blue: #92a8d1
-blue: #034f84
-light pink: #f7cac9
-pink: #f7786b
-
-Font
----
-font-family: 'Playfair Display', serif;
-*/
-
 * {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Exo 2', sans-serif;
 }
 
 body {
-    background-color: #034f84;
-    max-width: 800px;
+    background-color: #92a8d1;
+    background-image: url(https://i.pinimg.com/originals/34/7b/0a/347b0abdc8ed034270e8f2d8bdccc376.jpg);
+    max-width: 600px;
     margin: auto;
+    color: white;
 }
 
 header {
-    background-color: #92a8d1;
-    border-radius: 5px;
+    background-color: transparent;
+    color: white;
     text-align: center;
+    padding: 20px;
+}
+
+header h1{
+    padding-top: 5px;
+    margin-bottom: 0;
 }
 
 header p {
     font-style: italic;
+    padding-bottom: 5px;
 }
 
 #survey-form {
-    background-color: #f7cac9;
-    border: thick solid #f7786b;
-    border-radius: 5px;
+    padding: 30px 20px;
+    background-color: rgba(3, 79, 132, .7);
+    padding-bottom: 20px;
+}
+
+#survey-form p{
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
 }
 
 .form-field {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+#div-sport label, #div-watch-or-play label {
+    padding-bottom: 5px;
+}
+
+#div-sport select {
+    color: rgb(133, 133, 133);
+}
+
+.bold {
+    font-weight: 600;
 }
 
 #submit {
+    background-color: #f7786b;
+    border: none;
+    color: white;
     display: block;
-    width: 100px;
-    margin: auto;
+    height: 3em;
+    width: 90%;
+    margin: 30px auto;
+    font-size: large;
 }

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Sports Survey</title>
 </head>
@@ -18,58 +18,63 @@
         </p>
     </header>
     <form id="survey-form" action="">
-        <div class="form-field">
-            <label id="name-label" for="name">Name
-                <input placeholder="Enter your name" type="text" id="name">
-            </label>
+        <div id="name" class="form-field">
+            <label class="bold" id="name-label" for="name"><p>Name</p></label>
+            <input placeholder="Enter your name" type="text" id="name" required>
         </div>
-        <div class="form-field">
-            <label id="email-label" for="email">Email
-                <input placeholder="Enter your email" type="email" id="email">
-            </label>
+        <div id="div-email" class="form-field">
+            <label class="bold" id="email-label" for="email"><p>Email</p></label>
+            <input placeholder="Enter your email" type="email" id="email" required>
         </div>
-        <div class="form-field">
-            <label id="number-label" for="number">Age
-                <input placeholder="0" type="number" id="number" min="0" max="200">
-            </label>
+        <div id="div-age" class="form-field">
+            <label class="bold" id="number-label" for="number"><p>Age</p></label>
+            <input placeholder="Enter your age" type="number" id="number" min="0" max="200">
         </div>
-        <div class="form-field">
-            <label for="dropdown">Favorite sport
-                <select id="dropdown">
+        <div id="div-sport" class="form-field">
+            <label class="bold" for="dropdown"><p>Favorite sport</p></label>
+                <select id="dropdown">  
+                    <option value="" disabled selected>Select your favorite sport</option>
                     <option value="">Tennis</option>
                     <option value="">Volleyball</option>
                     <option value="">Soccer</option>
                     <option value="">Football</option>
                     <option value="">Basketball</option>
+                    <option value="">Other</option>
                 </select>
-            </label>
+
         </div>
-        <div class="form-field">
-            <p>What do you prefer?</p>
-            <label>Play it
+        <div id="div-prefer" class="form-field">
+            <p class="bold">What do you prefer?</p>
+            <label>
                 <input value="play" type="radio" name="watch-or-play">
+                To play it
             </label>
-            <label>Watch it
+            <label>
                 <input value="watch" type="radio" name="watch-or-play">
+                To watch it
             </label>
         </div>
-        <div class="form-field">
-            <p>What activities do you do at least once a month?</p>
+        <div id="div-activities" class="form-field">
+            <p class="bold">What activities do you do at least once a month?</p>
+            <label>
             <input value="gym" type="checkbox" name="activities">
             Go to the gym
             </label>
+            <label>
             <input value="sport" type="checkbox" name="activities">
             Play a sport
             </label>
+            <label>
             <input value="stretch" type="checkbox" name="activities">
             Stretch
             </label>
+            <label>
             <input value="walk" type="checkbox" name="activities">
             Walk for at least 30 min
             </label>
         </div>
-        <div class="form-field">
-            <p>What other physical activities do you do?</p>
+        <div id="div-other" class="form-field">
+            <p class="bold">What other physical activities do you do?</p>
             <textarea name="other" id="other-activities" maxlength="200"></textarea>
         </div>
         <button type="submit" id="submit">
